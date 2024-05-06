@@ -112,8 +112,51 @@ Utiliza las referencias de los breakpoints @media abajo */
 @media (min-width: 425px) {
 
 /*Menu*/
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 20px 0 20px;
+}
+
+.menu__header{
+    display: flex;
+    justify-content: space-between;   
+    align-items: center;
+}
+
+.menu__list{
+    display: none;
+}
+
 
 /*Titulo*/
+
+.title__profile{
+    width: 150px;
+        
+}
+.title__div{
+    margin: 20px;
+}
+
+.title__subsection{
+    font-weight: 100;
+}
+
+
+.title__network{
+    display: flex;
+    flex-grow: 3;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0;
+    font-weight: bold;
+    
+}
+
 
 /*Sección sobre mi*/
 
