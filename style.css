@@ -15,7 +15,7 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
-    margin: 0;
+    margin: 64px;
     padding: 0;
     line-height: 1;
 }
@@ -54,7 +54,7 @@ section.title{
 /*Sección About*/
 
 section.about{
-
+    background-color: aquamarine;
 }
 
 /*Sección Hobbies*/
@@ -94,6 +94,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
 
+body{
+    margin: 0 32px;
+}
+
 /* Menú */
 
 /*title*/
@@ -111,12 +115,15 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Mobile*/
 @media (min-width: 425px) {
 
+body{
+    margin: 0 16px;
+}
 /*Menu*/
 .menu{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px 0 20px;
+    
 }
 
 .menu__header{
@@ -133,11 +140,10 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Titulo*/
 
 .title__profile{
-    width: 150px;
+    width: 98px;
         
 }
-.title__div{
-    margin: 20px;
+    
 }
 
 .title__subsection{
@@ -160,9 +166,38 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Sección sobre mi*/
 
+.about__container{
+    margin: 0 20px;
+}
+
 /*Skills*/
 
+.skills{
+    text-align: center;
+}
+
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 90px;
+   
+}
+
 /*Hobbies*/
+.hobbies{
+    text-align: center;
+}
+
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 90px;
  
 /*Formación Académica*/
 
