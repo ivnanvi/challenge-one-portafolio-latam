@@ -15,9 +15,11 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-de-fundo) ;
     font-family: 'Raleway';
-    margin: 64px;
-    padding: 0;
+    width: fit-content;
+    margin: 0 0%;
+    padding: 0 0%;
     line-height: 1;
+    
 }
 ol, ul,li {
     list-style: none;
@@ -41,38 +43,166 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
 
-section.menu{
-
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 20%;
+    
+    font-size: smaller;
+    
 }
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.menu__list{
+    display: flex;
+    flex-direction: row;
+    
+    gap: 20px;
+    
+}
+
+.menu__list__item__contato{
+    display: none;
+}
+
 
 /*Sección Title*/
 
-section.title{
-
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 20px 20%;
+}
+.title__bio{
+    font-size: xx-large;
+}
+.title__subsection{
+    font-weight: 100;
+}
+.title__profile{
+    width: 370px;
+}
+.title__network{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0%;
+}
+/*Sección About*/
+.about{
+    background-color: rgb(169, 215, 248);
+}
+.about__container{
+    padding: 30px 0;
+    margin: 0 20%;
+}
+.about__title{
+    font-size: x-large;
+    
+}
+.about__paragraph{
+    font-size: smaller;
+    
 }
 
-/*Sección About*/
-
-section.about{
-    background-color: aquamarine;
+/*Skills*/
+.skills{
+    margin: 0 20%;
+}
+.skills__title{
+    text-align: center;
+    font-size: x-large;
+    margin: 50px 0 20px 0;
+}
+.skills__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+    
+}
+.skills__box ul{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    align-content: flex-end;
+    align-items: flex-end;
+    font-size: 10px;
+    background-color: white;
 }
 
 /*Sección Hobbies*/
 
-section.hobbies{
-    
+.hobbies{
+    margin: 0 20%;
 }
+.hobbies__title{
+    margin: 50px 0 20px 0;
+    text-align: center;
+    font-size: x-large;
+}
+.hobbies__line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 0;
+        
+}
+.hobbies__box ul{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    align-content: flex-end;
+    align-items: flex-end;
+    font-size: 10px;
+    background-color: white;
+}    
 
 /* Experiencia Académica*/
-
-section.academic{
-
+.academic{
+    margin: 30px 0;
+    padding: 30px 0;
+    background-color: rgb(228, 244, 255);
+}    
+.academic__title{
+        
+        padding: 0px 0;
+        text-align: center;
+        font-size: x-large;  
+}
+.academic__courses{
+    display: flex;
+    flex-direction: row;
+    margin: 0 20%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+}
+.academic__courses__box{
+    
+    
+}
+.academic__courses__list{
+    padding: 0;
+}
+.academic__courses__item__img{
+    padding: 40px 40px;
+    background-color: white;
 }
 
 /* experiencia*/
 
-section.experience{
-
+.experience{
+    margin: 0 20%;
+    
 }
 
 /*Contacto*/
@@ -94,10 +224,6 @@ Utiliza las referencias de los breakpoints @media abajo */
 /*Tablet*/
 @media (min-width: 768px) {
 
-body{
-    margin: 0 32px;
-}
-
 /* Menú */
 
 /*title*/
@@ -115,89 +241,15 @@ body{
 /*Mobile*/
 @media (min-width: 425px) {
 
-body{
-    margin: 0 16px;
-}
 /*Menu*/
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.menu__header{
-    display: flex;
-    justify-content: space-between;   
-    align-items: center;
-}
-
-.menu__list{
-    display: none;
-}
-
 
 /*Titulo*/
 
-.title__profile{
-    width: 98px;
-        
-}
-    
-}
-
-.title__subsection{
-    font-weight: 100;
-}
-
-
-.title__network{
-    display: flex;
-    flex-grow: 3;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: 10px;
-    padding: 0;
-    font-weight: bold;
-    
-}
-
-
 /*Sección sobre mi*/
-
-.about__container{
-    margin: 0 20px;
-}
 
 /*Skills*/
 
-.skills{
-    text-align: center;
-}
-
-.skills__line{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 90px;
-   
-}
-
 /*Hobbies*/
-.hobbies{
-    text-align: center;
-}
-
-.hobbies__line{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 90px;
  
 /*Formación Académica*/
 
